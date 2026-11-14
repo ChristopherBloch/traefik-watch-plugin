@@ -1,0 +1,10 @@
+displayName: Traefik Watch
+type: middleware
+import: github.com/ChristopherBloch/traefik-watch-plugin
+runtime: yaegi
+summary: Send live access logs to Traefik Watch and reject IPs blocked by its rules.
+testData:
+  watchUrl: http://127.0.0.1:8088
+  token: test-token
+  pollInterval: 5s
+  blockStatus: 403
